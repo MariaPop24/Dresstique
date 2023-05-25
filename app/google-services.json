@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "682811502719",
+    "project_id": "dresstique-android",
+    "storage_bucket": "dresstique-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682811502719:android:7b4c68954eae25ded0cf4a",
+        "android_client_info": {
+          "package_name": "com.example.dresstique_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN3q1_StzvNmAPfyBRvK6tPtd1eJrSLeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
