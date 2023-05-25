@@ -3,12 +3,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e4e3e2"
     tools:context=".fragments.SignUpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="Sign up"
+            android:textColor="#202020"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Sign me up"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:backgroundTint="#202020"/>
+
+        <TextView
+            android:id="@+id/text_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="OR"
+            android:textColor="#202020"
+            android:textSize="20sp"
+            android:layout_below="@id/buttonSignUp"/>
+
+        <Button
+            android:id="@+id/buttonBackLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go back to log in"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#202020"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:layout_below="@id/text_or"/>
+
+    </RelativeLayout>
 
 </FrameLayout>

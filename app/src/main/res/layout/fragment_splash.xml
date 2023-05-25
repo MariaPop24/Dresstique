@@ -5,10 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".fragments.SplashFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Dressique"
+        android:layout_marginBottom="50dp"
+        android:textColor="#202020"
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/splash_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="dress me up"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#202020"
+        android:padding="20dp" />
 </FrameLayout>
