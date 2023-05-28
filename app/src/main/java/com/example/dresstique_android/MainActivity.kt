@@ -1,5 +1,6 @@
 package com.example.dresstique_android
 
+import SplashFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,7 +9,6 @@ import com.example.dresstique_android.databinding.ActivityMainBinding
 import com.example.dresstique_android.fragments.HomeFragment
 import com.example.dresstique_android.fragments.ProfileFragment
 import com.example.dresstique_android.fragments.PromoFragment
-import com.example.dresstique_android.fragments.SplashFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -26,19 +26,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.profile -> replaceFragment(ProfileFragment())
                 R.id.home -> replaceFragment(HomeFragment())
 
-                else ->{
-
-
-
-                }
-
+                else ->{}
             }
-
             true
-
         }
         binding.bottomNavigationView.visibility = View.GONE
-
     }
 
     fun replaceFragment(fragment : Fragment){
@@ -47,7 +39,4 @@ class MainActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frame_layout,fragment)
         fragmentTransaction.commit()
-
-
-    }
-    }
+    } }

@@ -1,4 +1,4 @@
-package com.example.dresstique_android.fragments
+
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.dresstique_android.MainActivity
 import com.example.dresstique_android.databinding.FragmentSplashBinding
+import com.example.dresstique_android.fragments.LogInFragment
 
 class SplashFragment : Fragment() {
     private lateinit var binding: FragmentSplashBinding
@@ -22,7 +23,7 @@ class SplashFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.splashBtn.setOnClickListener() {
+        binding.splashBtn.setOnClickListener {
             (activity as? MainActivity)?.replaceFragment(LogInFragment())
         }
     }
