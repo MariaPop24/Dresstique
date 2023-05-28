@@ -3,14 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#EAEEEF"
     tools:context=".fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="profile"
-        android:textSize="26dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="Dresstique"
+            android:textColor="#202020"
+            android:textSize="50dp"
+            android:layout_marginBottom="150dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="This is the profile page"
+            android:textColor="#202020"
+            android:textSize="25dp"
+            android:layout_below="@+id/profile_title"/>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="sign me out"
+        android:layout_below="@+id/profile_text"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:backgroundTint="#202020"/>
+
+    </RelativeLayout>
 
 </FrameLayout>

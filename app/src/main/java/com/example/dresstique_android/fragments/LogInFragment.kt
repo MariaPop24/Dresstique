@@ -22,8 +22,8 @@ class LogInFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.buttonSignIn.setOnClickListener {
-//            (activity as? MainActivity)?.replaceFragment(SignUpFragment())
-//        }
+        binding.buttonSignUp.setOnClickListener {
+            (activity as? MainActivity)?.replaceFragment(SignUpFragment())
+        }
     }
 }
