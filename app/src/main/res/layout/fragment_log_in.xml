@@ -104,7 +104,8 @@
             android:text="Don't have an account yet? Sign up now"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#75757575"
+            android:textColor="#ffffff"
+            android:backgroundTint="#202020"
             />
 
     </RelativeLayout>
