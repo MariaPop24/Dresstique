@@ -28,7 +28,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-        clothesRecyclerview = view.findViewById(R.id.eventsList)
+        clothesRecyclerview = view.findViewById(R.id.clothesList)
         clothesRecyclerview.layoutManager = LinearLayoutManager(activity)
         clothesRecyclerview.setHasFixedSize(true)
         clothesArrayList = arrayListOf<Clothes>()
