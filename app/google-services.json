@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "682811502719",
+    "firebase_url": "https://dresstique-android-default-rtdb.firebaseio.com",
     "project_id": "dresstique-android",
     "storage_bucket": "dresstique-android.appspot.com"
   },

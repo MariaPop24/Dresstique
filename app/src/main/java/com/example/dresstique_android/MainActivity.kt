@@ -9,6 +9,7 @@ import com.example.dresstique_android.databinding.ActivityMainBinding
 import com.example.dresstique_android.fragments.HomeFragment
 import com.example.dresstique_android.fragments.ProfileFragment
 import com.example.dresstique_android.fragments.PromoFragment
+import com.example.dresstique_android.fragments.SignUpFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(SplashFragment())
+        replaceFragment(SignUpFragment())
 
         binding.bottomNavigationView.setOnItemSelectedListener {
 
